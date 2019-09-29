@@ -9,7 +9,7 @@ class db {
 	private $usuario = 'root';
 
 	//senha
-	private $senha = '';
+	private $senha = 'root';
 
 	//banco de dados
 	private $database = 'OS_facil';

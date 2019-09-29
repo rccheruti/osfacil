@@ -1,18 +1,7 @@
-<?php 
-	
-	session_start();
+<?php
 
-	if(!isset($_SESSION['usuario'])){
-		header('Location: index.php?erro=1');
-	}
+require_once("session_start.php");
 
-	require_once('db.class.php');
-
-	$objDb = new db();
-	$link = $objDb->conecta_mysql();
-
-	$id_usuario = $_SESSION['id_usuario'];
-	$usuario = $_SESSION['usuario'];
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
@@ -20,19 +9,7 @@
 		<meta charset="UTF-8">
 
 		<title>OS Fácil</title>
-		<script>
-			window.onload = function() {
-			var imprimir = document.querySelector("#imprimir");
-		    imprimir.onclick = function() {
-		    	imprimir.style.display = 'none';
-		    	window.print();
-                
-		    	var time = window.setTimeout(function() {
-		    		imprimir.style.display = 'block';
-		    	}, 1000);
-		    }
-			}
-		</script>
+		<script src="js/funcoes.js"></script>
 		
 		<!-- jquery - link cdn -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -52,40 +29,6 @@
 	</head>
 
 	<body>
-
-		
-
-
-		<!-- Static navbar -->
-	    <nav class="navbar navbar-default navbar-static-left">
-	      	<div class="container">
-	        		<div class="navbar-header" style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2"><br/>
-	        			<img src="imagens/icon_assistencia.png" width="50px" height="50px" />
-
-	        			<h5>OS Fácil</h5>
-
-	        			<br />   			
-					</div>
-
-					<div style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2">
-
-						<br/>
-						<br/>
-						<nav aria-label="breadcrumb" class="navbar-right">
-  								<ol class="breadcrumb">
-  									<h4 align="center"><?= $_SESSION['usuario'] ?></h4>
-  									<li class="breadcrumb-item"><a href="home.php">Home</a></li>
-    								<li class="breadcrumb-item"><a href="cadastro.php">Cadastrar</a></li>
-    								<li class="breadcrumb-item"><a href="os.php">Lançar OS</a></li>
-    								<li class="breadcrumb-item"><a href="consulta.php">Consultas</a></li>
-  								</ol>
-						</nav>
-	        		</div>
-
-
-	        			      		
-	        </div>
-	    </nav>
 
 	    <div class="container row">	    	
 	    	<div class="col-md-4">
