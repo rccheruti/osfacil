@@ -1,18 +1,6 @@
 <?php
-	
-	session_start();
 
-	if(!isset($_SESSION['usuario'])){
-		header('Location: index.php?erro=1');
-	}
-
-	require_once('db.class.php');
-
-	$objDb = new db();
-	$link = $objDb->conecta_mysql();
-
-	$id_usuario = $_SESSION['id_usuario'];
-	$usuario = $_SESSION['usuario'];
+require_once("session_start.php");
 
 ?>
 <!DOCTYPE HTML>
@@ -22,19 +10,7 @@
 
 		<title>OS Fácil</title>
 
-		<script>
-			window.onload = function() {
-			var imprimir = document.querySelector("#imprimir");
-		    imprimir.onclick = function() {
-		    	imprimir.style.display = 'none';
-		    	window.print();
-                
-		    	var time = window.setTimeout(function() {
-		    		imprimir.style.display = 'block';
-		    	}, 1000);
-		    }
-			}
-		</script>
+		<script src="js/funcoes.js"></script>
 		
 		<!-- jquery - link cdn -->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -53,50 +29,11 @@
 		<link href="/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
 	</head>
 
-	<body>
-
-		<!-- Static navbar -->
-	    <nav class="navbar navbar-default navbar-static-left">
-	      	<div class="container">
-	        		<div class="navbar-header"><br/>
-	        			<img src="imagens/icon_assistencia.png" width="50px" height="50px" />
-
-	        			<h5 style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2">OS Fácil</h5>
-
-	        			<br />   			
-					</div>
-
-					<div style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2">
-
-						<br/>
-						<br/>
-
-							<nav aria-label="breadcrumb" class="navbar-right">
-  								<ol class="breadcrumb">
-  									<h4 align="center"><?= $_SESSION['usuario'] ?></h4>
-  									<li class="breadcrumb-item"><a href="home.php">Home</a></li>
-    								<li class="breadcrumb-item"><a href="cadastro.php">Cadastrar</a></li>
-    								<li class="breadcrumb-item active" aria-current="page">Lançar OS</li>
-    								<li class="breadcrumb-item"><a href="consulta.php">Consultas</a></li>
-  								</ol>
-							</nav>
-	        		</div>
-
-
-	        			
-	        				
-						       		
-	        </div>
-	    </nav>
-
-	   	
-
-
-
-	    	<div class="col-md-4"></div>  	
+<body>
+		<div class="col-md-3"></div>  	
 	    		
-	    			<div class="col-md-4">
-	    		<h3 style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2">Lançamento OS</h3>
+	    			<div class="col-md-6">
+	    		<h3 style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2" align="center">Lançamento OS</h3>
 	    		<br />
 				<form method="post" action="conf_os.php" id="formCadastrarse">
 					<div class="form-group">
@@ -132,15 +69,7 @@
 				</form>	
 	    	</div>
 
-	    	<div class="col-md-4"></div>
-
-
-
-	    	
-	    	
-
-
-			
+	    	<div class="col-md-3"></div>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	
 	</body>
