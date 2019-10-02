@@ -9,23 +9,18 @@ require_once("session_start.php");
 		<meta charset="UTF-8">
 
 		<title>OS Fácil</title>
-		<script src="js/funcoes.js"></script>
-		
-		<!-- jquery - link cdn -->
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <!--javascript		-->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/fazerRequisicao.js"></script>
 
-		<!-- bootstrap - link cdn -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<!-- Bootstrap core CSS -->
-
-		<link href="/docs/4.1/dist/css/bootstrap.css" rel="stylesheet">
-
-
-		<!-- Documentation extras -->
-
-		<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
-
-		<link href="/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet" >
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" rel="stylesheet" >
+        <link href="css/estilos.css" type="text/css"  rel="stylesheet">
 	</head>
 
 	<body>

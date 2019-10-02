@@ -24,62 +24,23 @@
 		<meta charset="UTF-8">
 
 		<title>OS Fácil</title>
+        <!--javascript		-->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/fazerRequisicao.js"></script>
 
-		
-		
-		<!-- jquery - link cdn -->
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
-		<!-- bootstrap - link cdn -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<!-- Bootstrap core CSS -->
-
-		<link href="/docs/4.1/dist/css/bootstrap.css" rel="stylesheet">
-
-		<!-- Documentation extras -->
-
-		<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
-		
-		<link href="/docs/4.1/assets/css/docs.min.css" rel="stylesheet">
-
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet" >
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" rel="stylesheet" >
+        <link href="css/estilos.css" type="text/css"  rel="stylesheet">
 	</head>
 
 	<body>
 
-		<!-- Static navbar -->
-	    <nav class="navbar navbar-default navbar-static-left">
-	      	<div class="container">
-	        		<div class="navbar-header"><br/>
-	        			<img src="imagens/icon_assistencia.png" width="50px" height="50px" />
-
-	        			<h5 style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2">OS Fácil</h5>
-
-	        			<br />   			
-					</div>
-
-					<div style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2">
-
-						<br/>
-						<br/>
-
-							<nav aria-label="breadcrumb" class="navbar-right">
-  								<ol class="breadcrumb">
-  									<h4 align="center"><?= $_SESSION['usuario'] ?></h4>
-  									<li class="breadcrumb-item"><a href="home.php">Home</a></li>
-    								<li class="breadcrumb-item"><a href="cadastro.php">Cadastrar</a></li>
-    								<li class="breadcrumb-item"><a href="os.php">Lançar OS</a></li>
-    								<li class="breadcrumb-item"><a href="consulta.php">Consultas</a></li>
-  								</ol>
-							</nav>
-	        		</div>						       		
-	        </div>
-	    </nav>
-
-	   	
-
-
-
-	    			<div class="col-md-4"></div>	    	
+					<div class="col-md-4"></div>	    	
 	    			<div class="col-md-4">
 	    				<h3 style="text-shadow: 0.1em 0.1em 0.15em #5fa8d2" align="center">Inserir novo usuário</h3>
 	    				<br />
